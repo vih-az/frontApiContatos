@@ -40,4 +40,25 @@ const trocarPagina = function(){
         window.location.href = '../index.html'
     }
 }
-botao.addEventListener('click', cadastrarProdutos)
+botao.addEventListener('click', atualizeUmProduto)
+const produtos = function(produtos){
+    const nome = document.getElementById("nome")
+    const categorias = document.getElementById("categorias")
+    const preco = document.getElementById('preco')
+    const desconto = document.getElementById('desconto')
+    const imagem = document.getElementById('imagem')
+    const descricao = document.getElementById('descricao')
+    const quantidade = document.getElementById('quantidade')
+    const ingredientes = document.getElementById('ingredientes')
+    const id = document.getElementById('id')
+    nome.value = produtos.nome
+    categorias.value = produtos.categorias
+    preco.value = produtos.preco
+    desconto.value = produtos.desconto
+    imagem.value = produtos.imagem
+    descricao.value = produtos.descricao
+    quantidade.value = produtos.quantidade
+    ingredientes.value = produtos.ingredientes
+    id.value = produtos.id
+}
+produtos()

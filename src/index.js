@@ -38,6 +38,7 @@ const criarDivParaOsProdutos = function(produtos){
     botaoAtualize.addEventListener("click", function(){
         window.location.href = "./pages/atualizeUmProduto.html"
         atualizeProduto(produtos, produtos.id)
+        atualizeUmProduto(produtos)
     })
     conteiner.classList.add("border", "flex", "gap-1", "flex-col", "items-start")
     conteiner.append(id, nome, categorias, preco, desconto, imagem, descricao, quantidade, ingredientes, botaoDeletar, botaoAtualize)
