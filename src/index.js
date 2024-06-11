@@ -38,11 +38,6 @@ const criarDivParaOsProdutos = function(produtos){
     botaoAtualize.addEventListener("click", function(){
         const idLocal = localStorage.setItem('id', produtos.id)
         window.location.href = "./pages/atualizeUmProduto.html"
-<<<<<<< HEAD
-=======
-        atualizeProduto(produtos, produtos.id)
-        atualizeUmProduto(produtos)
->>>>>>> 4f4d1368de2d8f1e3e01cd22779d2872ac216bf6
     })
     conteiner.classList.add("border", "flex", "gap-1", "flex-col", "items-start")
     conteiner.append(id, nome, categorias, preco, desconto, imagem, descricao, quantidade, ingredientes, botaoDeletar, botaoAtualize)
