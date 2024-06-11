@@ -36,8 +36,8 @@ const criarDivParaOsProdutos = function(produtos){
     botaoAtualize.textContent = 'atualize um produto'
     botaoAtualize.setAttribute("id", "botaoAtualizarProduto")
     botaoAtualize.addEventListener("click", function(){
+        const idLocal = localStorage.setItem('id', produtos.id)
         window.location.href = "./pages/atualizeUmProduto.html"
-        atualizeProduto(produtos, produtos.id)
     })
     conteiner.classList.add("border", "flex", "gap-1", "flex-col", "items-start")
     conteiner.append(id, nome, categorias, preco, desconto, imagem, descricao, quantidade, ingredientes, botaoDeletar, botaoAtualize)
@@ -48,10 +48,6 @@ const mostrarProdutos = async function(){
     const produtos = await pegarProdutos()
     produtos.forEach(function(produtoss){
         const divParaOsProdutos = criarDivParaOsProdutos(produtoss)
-        console.log(divParaOsProdutos)
-        console.log(produtoss)
-        console.log(produtos)
-        console.log(conteiner);
         conteiner.appendChild(divParaOsProdutos)
     })
 }

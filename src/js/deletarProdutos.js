@@ -8,4 +8,3 @@ export async function deletarProdutos(idProdutos){
     return response.ok
 }
 const botaoDeletarProduto = document.getElementById("botaoDeletarProduto")
-// botaoDeletarProduto.addEventListener("click", deletarProdutos(idProdutos))

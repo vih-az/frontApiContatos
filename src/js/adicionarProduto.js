@@ -19,6 +19,7 @@ const cadastrarProdutos = function(){
     novoProdutos.quantidade = quantidade.value
     novoProdutos.ingredientes = ingredientes.value
     novoProdutos.id = id.value
+    console.log(novoProdutos)
     cadProd(novoProdutos)
     return novoProdutos
 }
