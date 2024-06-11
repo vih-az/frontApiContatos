@@ -76,3 +76,4 @@ const trocarPagina = function(){
 }
 botao.addEventListener('click', atualizeUmProduto)
 produto(idLocal)
+trocarPagina
